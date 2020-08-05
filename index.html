@@ -29,15 +29,15 @@
                 <div class="content">
                     <p>Quantum Computation is an emerging field at the intersection of
                         physics, mathematics, and computer science that has the potential to
-                        substatially improve the computational capabilities of scientists,
+                        substantially improve the computational capabilities of scientists,
                         doctors, and others who deal with computationally challenging
                         problems.  However, to build a scalable quantum computer, components
                         and operations which are highly accurate are required.  In this
-                        project, an analysis of one such promising system, the
+                        project, an analysis of one such promising component, the
                         cross-resonance gate, is presented.  The cross-resonance gate is a
-                        fundamental operation for the transmon model of quantum computation,
-                        which is a promising technology for the production of large-scale
-                        near-term quantum computers.  This project models the
+                        fundamental two-qubit entangling operation for the transmon architecture of
+                        quantum computation, which is a promising system for the
+                        production of large-scale near-term quantum computers.  This project models the
                         cross-resonance gate with high physical accuracy in order to better
                         understand the functionality of the gate and how to better improve
                         its fidelity.</p>
@@ -57,11 +57,13 @@
                             0 or 1).  A measurement causes this mixture to collapse to one of
                             the basic states.</li>
                         <li>Qubits can also become <i>entangled</i>, which allows the value of
-                            one qubit to dictate the value of another qubit when measured.
+                            one qubit to dictate the value of another qubit when measured.</li>
+                        <li>Qubits are often represented as unit spheres, and each point on
+                            this sphere represents a valid state for the qubit. </li>
                     </ul>
                     <div id="qubitSimulation">
                         <img src="img/qubitdiagram.png"><br>
-                        <span class="label">Figure 1: Comparision between a Bit and a Qubit [1]</span>
+                        <span class="label">Figure 1: Comparison between a Bit and a Qubit [1]</span>
                     </div>
                 </div>
             </section>
@@ -78,14 +80,14 @@
                     </div>
                     <ul>
                         <li><i>Anharmonicity</i>: A measure of how much the transmon deviates
-                            from the behavior of a harmonic oscillator, like a pendulum.
+                            from the behavior of a harmonic oscillator, like a mass on a spring.</li>
                         <li>Base frequency: The base rate of oscillation.  Multiple transmons in
                             the same system are usually <i>detuned</i> from each other by having
                             varying base frequencies.</li>
                     </ul>
                     <div id="transmonCircuit" style="text-align:center">
                         <img src="img/transmondiagram.png" alt="Transmon Circuit Diagram" style="width:10in;height:4in;">
-                        <span class="label">Figure 2: The circuit diagram for a transmon [2]</span>
+                        <span class="label">Figure 2: The circuit diagram for a transmon with controls [2]</span>
                     </div>
                 </div>
             </section>
@@ -100,14 +102,14 @@
                         of the control qubit about the "Z" axis, and a rotation of the
                         target qubit about the "X" axis.  The magnitude of these rotations
                         is determined by the state of the control qubit; this produces a
-                        conditioned behavior on the taget qubit.</p>
+                        conditioned behavior on the target qubit.</p>
                     <div class="sim1" id="idealSimulation">
                         <div id="d50b32c7-f5f0-4c7b-b2b8-4bb05b830c60" style="width:1700px;height:625px;"></div>
                     </div>
                 </article>
                 <article id="hamiltonian">
                     <h3 class="minorsection">Hamiltonian Formulation</h3>
-                    <p>While the ideal model provides clairty about how the gate acts, it
+                    <p>While the ideal model provides clarity about how the gate acts, it
                         does not provide any insight into how this can be achieved in the
                         laboratory setting.  By using a mathematical model called the
                         <i>Hamiltonian</i>, all the components which make up the two
@@ -124,10 +126,10 @@
                     <div id="chargeDephasing">
                         <p>A variety of effects can result in the accuracy of operations
                             degrading over time.  One such effect is fluctuations in the
-                            electical charge being passed through the quantum circuit.
-                            This can be modeled as a time-dependant shift of the base
+                            electrical charge being passed through the quantum circuit.
+                            This can be modeled as a time-dependent shift of the base
                             frequency of the transmon.  However, since the operation of the
-                            cross-resonance gate is also dependant on the base frequencies
+                            cross-resonance gate is also dependent on the base frequencies
                             of these transmons, this can produce errors in the procedure.
                             <br>
                             In addition,, typically one cannot
@@ -135,7 +137,7 @@
                             unwanted errors.  To avoid this, <i>pulse envelopes</i> are used
                             to smooth out the process of applying a drive.  These envelopes
                             allow the drive to smoothly transition from 0 to maximum drive,
-                            then back to 0.  For all prior simulatins, a cosine ramp was used.
+                            then back to 0.  For all prior simulations, a cosine ramp was used.
                         </p>
                     </div>
                     <div class="sim3" id="pulseEnvelopeSimulation">
@@ -203,10 +205,10 @@
                     <div class="listTitle">
                         <p>Acknowledgements</p>
                     </div>
-                    <p>Special thanks to Dr. Justin Dressel and the Spin Lab for their
+                    <p>Special thanks to Dr. Justin Dressel and the Spin Group for their
                         discussions and feedback about the development of this project.</p>
                     <div class="listTitle">
-                        <p>Refrences</p>
+                        <p>References</p>
                     </div>
                     <br>
                     <span>[1] Linares, Goch. "Modelling and traceability for computationally-intensive
