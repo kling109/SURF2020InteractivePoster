@@ -1,0 +1,66 @@
+/* Stylesheet for formatting the design of the poster.  Handles visuals, colors, and font */
+body {
+    font-size: 38px;
+    background-color: #FBFBFB;
+    outline: 2px solid black;
+    font-family: "Computer Modern";
+}
+
+.headline {
+    background-color: #7A0000;
+    color: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 3px black;
+    border-radius: 5px;
+}
+
+.majorsection {
+
+}
+
+.minorsection {
+    background-color: #7A0000;
+    color: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 3px black;
+    border-radius: 5px;
+}
+
+.centercol {
+    background-color: #322F2F;
+    color: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 3px black;
+    border-radius: 5px;
+}
+
+.listTitle {
+    border-bottom: 5px dotted #A6A6A6;
+}
+
+.listTitle span {
+    font-size: 44px;
+}
+
+#titlebar {
+    border-bottom: 5px solid #D6D6D6;
+}
+
+#titlebar h1 {
+    font-size: 84px;
+}
+
+#titlebar h3 {
+    font-size: 64px;
+}
+
+#gridcol1 {
+    background-color: #322F2F;
+    color: #FBFBFB;
+}
+
+#gridcol3 {
+    background-color: #322F2F;
+    color: #FBFBFB;
+}
+
+#references .content {
+    font-size: 35px;
+}

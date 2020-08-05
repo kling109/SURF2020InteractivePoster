@@ -1,0 +1,245 @@
+/* Stylesheet for formatting the layout of the poster.  Handles positioning of elements. */
+body {
+    height: 36in;
+    width: 48in;
+    display: grid;
+    grid-template-columns: 1in 12in 22in 12in 1in;
+    align-items: start;
+    margin-top: 1in;
+    margin-bottom: 1in;
+}
+
+p + .sim1 {
+    margin-top: -1.15in;
+}
+
+p + .sim2 {
+    margin-top: -0.40in;
+}
+
+p + .sim3 {
+    margin-top: -0.40in;
+}
+
+.headline {
+    text-align: center;
+    width: 11.5in;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.minorsection {
+    height: 0.60in;
+    width: 20in;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centercol {
+    text-align: center;
+    width: 21in;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    width: 10in;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.listTitle {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.listTitle + ul {
+    margin-top: 10px;
+}
+
+#titlebar {
+    height: 4in;
+    grid-column: 2 / span 3;
+    display: grid;
+    grid-template-columns: 1in 2in 1in 2in 1in 1fr 1in 5in 1in;
+    grid-template-rows: 1in 1in 1in 1in;
+}
+
+#titlebar h1 {
+    grid-column: 6;
+    grid-row: 1 / span 3;
+    text-align: center;
+}
+
+#titlebar h3 {
+    grid-column: 6;
+    grid-row: 3;
+    text-align: center;
+    vertical-align: center;
+}
+
+#titlebar #nsf {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+    position: relative;
+}
+
+#titlebar #aro {
+    grid-column: 4;
+    grid-row: 2 / span 2;
+    position: relative;
+}
+
+#titlebar #cu {
+    grid-column: 8;
+    grid-row: 2 / span 2;
+    position: relative;
+}
+
+#titlebar img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#gridcol1 {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+#gridcol2 {
+    grid-column: 3;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+#gridcol2 article h3 {
+    text-align: center;
+    vertical-align: center;
+}
+
+#gridcol3 {
+    grid-column: 4;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+#introduction {
+    height: 9in;
+}
+
+#qubits {
+    height: 11in;
+}
+
+#qubitSimulation {
+    align-items: center;
+    text-align: center;
+}
+
+#transmons {
+    height: 12in;
+}
+
+#simulations {
+    height: 32in;
+    width: 22in;
+}
+
+#crossresonance {
+    grid-column: 4;
+    height: 14in;
+    width: 12in;
+}
+
+#crgatesimulation {
+    align-items: center;
+    text-align: center;
+}
+
+#futureadditions {
+    grid-column: 4;
+    height: 9in;
+}
+
+#references {
+    grid-column: 4;
+    height: 9in;
+}
+
+#idealGate {
+    display: grid;
+    grid-template-rows: 1in 3in 5in;
+}
+
+#idealGate h3 {
+    grid-row: 1;
+}
+
+#idealGate p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20in;
+    grid-row: 2;
+}
+
+#idealGate #idealSimulation {
+    grid-row: 3;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hamiltonian {
+    display: grid;
+    grid-template-rows: 1in 3in 5.75in;
+}
+
+#hamiltonian h3 {
+    grid-row: 1;
+}
+
+#hamiltonian p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20in;
+    grid-row: 2;
+}
+
+#hamiltonian #numericalSimulation {
+    grid-row: 3;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dephasing {
+    display: grid;
+    grid-template-rows: 1in 4in 5in;
+}
+
+#dephasing h3 {
+    grid-row: 1;
+}
+
+#dephasing p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20in;
+    grid-row: 2;
+}
+
+#dephasing #pulseEnvelopeSimulation {
+    grid-row: 3;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
